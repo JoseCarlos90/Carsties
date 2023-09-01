@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-//using Contracts;
+using Contracts;
 
 namespace SearchService;
 
@@ -7,7 +7,7 @@ public class MappingProfiles : Profile
 {
     public MappingProfiles()
     {
-        // CreateMap<AuctionCreated, Item>();
-        // CreateMap<AuctionUpdated, Item>();
+        CreateMap<AuctionCreated, Item>();
+        CreateMap<AuctionUpdated, Item>();
     }
 }
